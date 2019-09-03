@@ -80,7 +80,9 @@ a:hover {
 @media (max-width: 700px) {
 
     .name {
+        display: inline-block;
         font-size: 9vmin;
+        width: 50%;
     }
 
     .grid-container {
@@ -104,8 +106,10 @@ a:hover {
     .carousel-pic {
         height: auto;
         width: 100%;
-        margin-left: 50%;
+        /*
+        margin-left: 40%;
         transform: translateX(-50%);
+        */
     }
 
     .flickity-button {
@@ -121,12 +125,12 @@ a:hover {
     }
 
     .description-mobile {
-        display: block;
         font-family: 'Josefin Sans', sans-serif;
         font-size: 4vmin;
         color: white;
-        font-size: 7vmin;
-        margin-top: 3vh;
-        margin-bottom: 7vh;
+        font-size:8vmin;
+        display: inline-block;
+        width: 45%;
+        text-align: right;
     }
 }
