@@ -125,9 +125,7 @@ a:hover {
         font-family: 'Josefin Sans', sans-serif;
         font-size: 4vmin;
         color: white;
-        position: absolute;
-        bottom: 4vmin;
-        left: 5vmin;
         font-size: 7vmin;
+        margin-top: 3vh;
     }
 }
