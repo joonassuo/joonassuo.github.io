@@ -2,6 +2,10 @@ body {
     background-color: antiquewhite;
 }
 
+.mobile {
+    display: none;
+}
+
 .grid-container {
     height: 90vh;
     width: 90vw;
