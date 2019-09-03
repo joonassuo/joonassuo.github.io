@@ -79,14 +79,26 @@ a:hover {
 
 @media (max-width: 700px) {
     body {
-        margin: 0;
-        margin-top: 1vh;
+        margin: 0 0 2vh 0;
+        height: 100%;
     }
 
     .name {
         display: inline-block;
         font-size: 9vmin;
-        width: 50%;
+        width: 45%;
+        padding: 1vh;
+    }
+
+    .description-mobile {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 4vmin;
+        color: white;
+        font-size:8.4vmin;
+        display: inline-block;
+        width: 45%;
+        text-align: right;
+        padding: 1vh;
     }
 
     .grid-container {
@@ -98,7 +110,6 @@ a:hover {
     }
 
     .main-carousel {
-        margin-top: 2vh;
         display: block;
     }
 
@@ -126,15 +137,5 @@ a:hover {
 
     .description {
         display: none;
-    }
-
-    .description-mobile {
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 4vmin;
-        color: white;
-        font-size:8vmin;
-        display: inline-block;
-        width: 45%;
-        text-align: right;
     }
 }
