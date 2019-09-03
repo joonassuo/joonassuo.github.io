@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +11,30 @@
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <div class="grid-container">
         <div class="v1"></div>
         <div class="name">&nbsp;sanna<br>&nbsp;silander</div>
-        <div class="description-mobile">
-            <a class="contact-link" href="google.com">&nbsp;contact</a><br>
-            <a class="portfolio-link" href="google.com">&nbsp;portfolio</a>
-        </div>
         <div class="description">
             <a class="contact-link" href="https://www.google.com">&nbsp;contact</a><br><br>
             <a class="portfolio-link" href="https://www.google.com">&nbsp;portfolio</a>
+        </div>
+        <div class="picture">
+            <img class="inline-pic" id="pic1" src="sanna1.jpg" alt="nicepic">
+            <img class="inline-pic" id="pic2" src="sanna3.jpg" alt="nicepic">
+        </div>
+        <div class="social"></div>
+    </div>
+
+    <div class="mobile">
+        <div class="topbar">
+            <div class="name">sanna<br>silander</div>
+            <div class="description-mobile">
+                <a class="contact-link" href="google.com">contact</a><br>
+                <a class="portfolio-link" href="google.com">portfolio</a>
+            </div>
         </div>
         <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
             <div class="carousel-cell">
@@ -39,12 +53,8 @@
                 <img src="sanna5.jpg" class="carousel-pic">
             </div>
         </div>
-        <div class="picture">
-            <img class="inline-pic" id="pic1" src="sanna1.jpg" alt="nicepic">
-            <img class="inline-pic" id="pic2" src="sanna3.jpg" alt="nicepic">
-        </div>
-        <div class="social"></div>
     </div>
 </body>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 </html>

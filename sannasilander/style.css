@@ -36,14 +36,6 @@ body {
     z-index: 1;
 }
 
-.description-mobile {
-    display: none;
-}
-
-.main-carousel {
-    display: none;
-}
-
 a {
     color: #dbc7a8;
     text-decoration: none;
@@ -79,38 +71,40 @@ a:hover {
 
 @media (max-width: 700px) {
     body {
-        margin: 0 0 2vh 0;
-        height: 100%;
+        margin: 0;
+    }
+
+    .grid-container {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .topbar {
+        width: 100%;
+        height: 20%;
     }
 
     .name {
         display: inline-block;
-        font-size: 9vmin;
-        width: 45%;
-        padding: 1vh;
+        font-size: 8vmin;
+        padding: 1.5vmin;
+        width: 46%;
     }
 
     .description-mobile {
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 4vmin;
-        color: white;
-        font-size:8.4vmin;
+        font-size: 8vmin;
         display: inline-block;
-        width: 45%;
         text-align: right;
-        padding: 1vh;
-    }
-
-    .grid-container {
-        display: initial;
-    }
-
-    .picture {
-        display: none;
+        padding: 1.5vmin;
+        width: 46%;
     }
 
     .main-carousel {
-        display: block;
+        height: 10%;
     }
 
     .carousel-cell {
@@ -119,7 +113,7 @@ a:hover {
     }
 
     .carousel-pic {
-        height: auto;
+        height: 80%;
         width: 100%;
         /*
         margin-left: 40%;
@@ -132,7 +126,7 @@ a:hover {
     }
 
     .flickity-page-dots {
-        bottom: 2vh;
+        bottom: 4vh;
     }
 
     .description {
