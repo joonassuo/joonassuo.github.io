@@ -78,6 +78,10 @@ a:hover {
 }
 
 @media (max-width: 700px) {
+    body {
+        margin: 0;
+        margin-top: 1vh;
+    }
 
     .name {
         display: inline-block;
