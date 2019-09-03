@@ -70,7 +70,7 @@ a:hover {
     display: inline-block;
 }
 
-@media (max-width: 1378px) {
+@media (max-width: 1300px) {
     #pic2 {
         width: 0;
         height: 0;
@@ -78,9 +78,9 @@ a:hover {
 }
 
 @media (max-width: 700px) {
-    #pic1 {
-        width: 100%;
-        height: auto;
+
+    .name {
+        font-size: 9vmin;
     }
 
     .grid-container {
@@ -92,7 +92,7 @@ a:hover {
     }
 
     .main-carousel {
-        margin-top: 4vh;
+        margin-top: 2vh;
         display: block;
     }
 
@@ -102,8 +102,8 @@ a:hover {
     }
 
     .carousel-pic {
-        height: 60vh;
-        width: auto;
+        height: auto;
+        width: 100%;
         margin-left: 50%;
         transform: translateX(-50%);
     }
