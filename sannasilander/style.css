@@ -102,7 +102,7 @@ a:hover {
     }
 
     .carousel-pic {
-        height: 65vh;
+        height: 55vh;
         width: auto;
         margin-left: 50%;
         transform: translateX(-50%);
