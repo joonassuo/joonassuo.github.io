@@ -7,41 +7,51 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 30vw;
+  width: 45vw;
   margin: 0;
 }
 
-.name {
+.bio,
+.clients,
+.name,
+.links {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.name {
   top: 10%;
-  left: 15%;
-  font-size: 3vmax;
+  width: 100%;
+  font-size: 3em;
   z-index: 1;
   color: #b38a58;
 }
 
 .bio,
 .clients {
-  position: absolute;
+  width: 100%;
   font-style: italic;
-  font-size: 1vmax;
+  font-size: 1em;
   color: #c8c8c8;
   top: 30%;
-  left: 15%;
 }
 
 .bio {
   display: block;
+  width: 50%;
+  line-height: 1.1em;
 }
 
 .clients {
   display: none;
+  line-height: 1.5em;
 }
 
 .links {
-  position: absolute;
-  top: 80%;
-  left: 15%;
+  line-height: 1.4em;
+  top: 70%;
   font-size: 1.6vmax;
   color: rgb(0, 0, 0);
 }
@@ -91,6 +101,10 @@ a,
   color: rgb(172, 165, 165);
 }
 
+p {
+  margin: 0;
+}
+
 a:hover,
 .clients-link:hover,
 .name:hover {
@@ -98,88 +112,99 @@ a:hover,
   cursor: pointer;
 }
 
-@media (max-width: 1300px) {
-  #pic2 {
-    width: 0;
-    height: 0;
+@media (max-width: 1200px) {
+  .grid-col--2 {
+    display: none;
+  }
+
+  .grid-col {
+    width: 70%;
   }
 }
 
 @media (max-width: 700px) {
-  body {
-    margin: 0;
-  }
-
-  .grid-container {
-    display: none;
-  }
-
-  .desktop {
+  .info-container {
     display: none;
   }
 
   .mobile {
     display: block;
+    margin: 0;
+    padding: 0;
   }
 
   .topbar {
-    width: 100%;
-    height: 20%;
-    margin-top: 1.4vmin;
-    margin-bottom: 1.4vmin;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 15vh;
+    background-color: antiquewhite;
+    z-index: 1;
   }
 
-  .name {
-    display: inline-block;
-    font-size: 8vmin;
-    padding: 1.5vmin;
-    margin-left: 3vmin;
-    width: 40%;
+  .name-mobile {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 2em;
   }
 
-  .description-mobile {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 8vmin;
-    display: inline-block;
-    text-align: right;
-    padding: 1.5vmin;
-    width: 46%;
+  .hamburger {
+    position: fixed;
+    top: 0;
+    right: 2vh;
+    height: 15vh;
+    width: 6vh;
   }
 
-  .main-carousel {
-    height: 10%;
-    margin: 0 2vmin 0 2vmin;
+  .hamburger-icon {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
-  .carousel-cell {
-    height: auto;
-    width: 100%;
+  .menu-container {
+    display: block;
+    position: fixed;
+    top: 15vh;
+    left: 0;
+    width: 100vw;
+    height: 85vh;
   }
 
-  .carousel-pic {
-    height: auto;
-    width: 100%;
+  .menu {
+    text-align: center;
+    position: relative;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  .flickity-button {
+  .menu-item {
+    font-size: 2em;
+    border-bottom: 0.1px solid lightgray;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+
+  .menu-item:hover {
+    cursor: pointer;
+  }
+
+  .grid {
     display: none;
+    left: 0;
+    top: 15vh;
+    width: 100%;
   }
 
-  .flickity-page-dots {
-    bottom: 3vh;
+  .grid-col {
+    width: 100%;
   }
 
-  .dot {
-    opacity: 1;
-    background: transparent;
-    /*border: 1px solid rgb(255, 255, 255);*/
-  }
-
-  .flickity-page-dots .dot.is-selected {
-    background: rgb(207, 189, 189);
-  }
-
-  .description {
-    display: none;
+  .img {
+    width: 100%;
   }
 }
