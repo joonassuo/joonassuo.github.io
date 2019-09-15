@@ -1,3 +1,5 @@
+//-----------------------DESKTOP--------------------------------------
+
 var clientsActive;
 
 clientsActive = false;
@@ -24,10 +26,36 @@ $(".name").click(() => {
         });
         clientsActive = false;
     }
-})
+});
+
+// ----------------------MOBILE-------------------------------------
+
+
+
+$(".hamburger-icon").click(() => {
+    $(".menu-container").slideToggle();
+});
 
 $(".portfolio-menu").click(() => {
-    $(".menu-container").fadeOut(200, () => {
-        $(".grid").fadeIn(200);
-    })
-})
+    $(".menu-container").slideToggle();
+    $(".clients").fadeOut(300);
+    $(".bio").fadeOut(300, () => {
+        $(".grid").fadeIn(300);
+    });
+});
+
+$(".bio-menu").click(() => {
+    $(".menu-container").slideToggle();
+    $(".clients").fadeOut(300);
+    $(".grid").fadeOut(300, () => {
+        $(".bio").fadeIn(300);
+    });
+});
+
+$(".clients-menu").click(() => {
+    $(".menu-container").slideToggle();
+    $(".grid").fadeOut(300);
+    $(".bio").fadeOut(300, () => {
+        $(".clients").fadeIn(300);
+    });
+});

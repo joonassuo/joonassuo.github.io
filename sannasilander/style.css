@@ -35,13 +35,14 @@ body {
   font-style: italic;
   font-size: 1em;
   color: #c8c8c8;
-  top: 30%;
+  top: 33%;
 }
 
 .bio {
   display: block;
-  width: 50%;
-  line-height: 1.1em;
+  width: 40%;
+  line-height: 1.2em;
+  font-size: 1.1em;
 }
 
 .clients {
@@ -123,8 +124,24 @@ a:hover,
 }
 
 @media (max-width: 700px) {
-  .info-container {
+  .name,
+  .bio,
+  .clients,
+  .links {
     display: none;
+  }
+
+  .clients,
+  .bio {
+    margin-top: 20%;
+    font-size: 1.5em;
+  }
+
+  .info-container {
+    position: fixed;
+    top: 15vh;
+    width: 100%;
+    height: auto;
   }
 
   .mobile {
@@ -139,8 +156,9 @@ a:hover,
     left: 0;
     width: 100vw;
     height: 15vh;
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     z-index: 1;
+    border-bottom: 1px solid grey;
   }
 
   .name-mobile {
@@ -157,12 +175,14 @@ a:hover,
     right: 2vh;
     height: 15vh;
     width: 6vh;
+    z-index: 2;
   }
 
   .hamburger-icon {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 5;
   }
 
   .menu-container {
@@ -171,22 +191,30 @@ a:hover,
     top: 15vh;
     left: 0;
     width: 100vw;
-    height: 85vh;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
   }
 
   .menu {
+    display: block;
     text-align: center;
     position: relative;
     top: 2%;
     left: 50%;
     transform: translateX(-50%);
+    overflow: hidden;
   }
 
   .menu-item {
+    display: block;
     font-size: 2em;
     border-bottom: 0.1px solid lightgray;
     padding-top: 3vh;
     padding-bottom: 3vh;
+    text-transform: lowercase;
+    margin-bottom: 0;
+    overflow: hidden;
   }
 
   .menu-item:hover {
@@ -194,10 +222,16 @@ a:hover,
   }
 
   .grid {
-    display: none;
+    display: block;
     left: 0;
     top: 15vh;
     width: 100%;
+  }
+
+  .clients {
+    background-color: blue;
+    width: 100%;
+    height: 100%;
   }
 
   .grid-col {
