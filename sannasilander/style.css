@@ -186,21 +186,21 @@ a:hover,
   }
 
   .menu-container {
-    display: block;
+    display: none;
     position: fixed;
     top: 15vh;
     left: 0;
     width: 100vw;
     height: auto;
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
+    background-color: rgb(71, 58, 58);
+    color: white;
   }
 
   .menu {
-    display: block;
+    margin-top: 10%;
+    margin-bottom: 10%;
     text-align: center;
     position: relative;
-    top: 2%;
     left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
@@ -208,13 +208,11 @@ a:hover,
 
   .menu-item {
     display: block;
-    font-size: 2em;
-    border-bottom: 0.1px solid lightgray;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    text-transform: lowercase;
-    margin-bottom: 0;
-    overflow: hidden;
+    font-size: 1.5em;
+    font-weight: 10;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    text-transform: uppercase;
   }
 
   .menu-item:hover {
