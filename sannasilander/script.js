@@ -19,15 +19,6 @@ $(".clients-link").click(() => {
     }
 });
 
-$(".name").click(() => {
-    if (clientsActive) {
-        $(".clients").fadeOut(200, () => {
-            $(".bio").fadeIn(200);
-        });
-        clientsActive = false;
-    }
-});
-
 // ----------------------MOBILE-------------------------------------
 
 
@@ -43,7 +34,7 @@ $(".portfolio-menu").click(() => {
         $(".grid").fadeIn(300);
     });
 });
-
+/*
 $(".bio-menu").click(() => {
     $(".menu-container").slideToggle();
     $(".clients").fadeOut(300);
@@ -51,11 +42,22 @@ $(".bio-menu").click(() => {
         $(".bio").fadeIn(300);
     });
 });
-
+*/
 $(".clients-menu").click(() => {
     $(".menu-container").slideToggle();
     $(".grid").fadeOut(300);
     $(".bio").fadeOut(300, () => {
         $(".clients").fadeIn(300);
     });
+});
+
+$(".insta").click(() => {
+    event.preventDefault();
+    location.href = "https://www.instagram.com/silandersanna/?hl=en";
+});
+
+$(".mail").click(() => {
+    event.preventDefault();
+    var email = 'sanna.silander@gmail.com';
+    window.location = 'mailto:' + email;
 });

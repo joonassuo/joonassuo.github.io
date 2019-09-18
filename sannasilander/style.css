@@ -35,7 +35,7 @@ body {
   width: 100%;
   font-style: italic;
   font-size: 1em;
-  color: #c8c8c8;
+  color: rgb(91, 91, 91);
   top: 25%;
 }
 
@@ -100,7 +100,7 @@ img {
 a,
 .clients-link {
   text-decoration: none;
-  color: rgb(172, 165, 165);
+  color: rgb(91, 91, 91);
 }
 
 p {
@@ -108,8 +108,7 @@ p {
 }
 
 a:hover,
-.clients-link:hover,
-.name:hover {
+.clients-link:hover {
   text-shadow: 0.1px 0.1px 2px;
   cursor: pointer;
 }
