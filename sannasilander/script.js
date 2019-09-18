@@ -14,7 +14,7 @@ $(".clients-link").click(() => {
         $(".clients").fadeOut(200, () => {
             $(".bio").fadeIn(200);
         });
-        $(".clients-link").css('text-shadow', 'initial');
+        $(".clients-link").css('text-shadow', '');
         clientsActive = false;
     }
 });
