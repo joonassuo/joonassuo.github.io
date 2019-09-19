@@ -1,6 +1,5 @@
 body {
-  /*  font-family: "Josefin Sans", sans-serif;*/
-  font-family: "Playfair Display", serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .info-container {
@@ -27,7 +26,7 @@ body {
   width: 100%;
   font-size: 2em;
   z-index: 1;
-  color: #b38a58;
+  color: rgb(0, 0, 0);
 }
 
 .bio,
@@ -56,10 +55,6 @@ body {
   top: 70%;
   font-size: 1em;
   color: rgb(0, 0, 0);
-}
-
-strong {
-  color: grey;
 }
 
 .grid {
@@ -125,15 +120,13 @@ a:hover,
 
 @media (max-width: 700px) {
   .name,
-  .bio,
   .clients,
   .links {
     display: none;
   }
 
-  .clients,
-  .bio {
-    margin-top: 20%;
+  .clients {
+    margin-top: 30%;
     font-size: 1.5em;
   }
 
@@ -205,7 +198,7 @@ a:hover,
     width: 100vw;
     height: auto;
     background-color: rgba(41, 53, 90, 0.959);
-    color: white;
+    color: rgb(255, 255, 255);
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   }
 
@@ -232,7 +225,6 @@ a:hover,
 
   .contact {
     border-top: 1px solid rgb(161, 159, 159);
-    /*  background-color: rgb(58, 74, 119);*/
     text-align: center;
     margin-top: 4em;
   }
