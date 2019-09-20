@@ -15,15 +15,12 @@ body {
 .clients,
 .name,
 .links {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
   text-align: center;
 }
 
 .name {
-  top: 10%;
-  width: 100%;
+  margin-top: 30%;
   font-size: 2em;
   z-index: 1;
   color: rgb(0, 0, 0);
@@ -31,18 +28,11 @@ body {
 
 .bio,
 .clients {
-  width: 100%;
+  margin-top: 2%;
   font-style: italic;
   font-size: 1em;
   color: rgb(91, 91, 91);
-  top: 25%;
-}
-
-.bio {
-  display: block;
-  width: 40%;
-  line-height: 1.2em;
-  font-size: 0.9em;
+  height: 25%;
 }
 
 .clients {
@@ -52,7 +42,6 @@ body {
 
 .links {
   line-height: 1.4em;
-  top: 70%;
   font-size: 1em;
   color: rgb(0, 0, 0);
 }
@@ -115,6 +104,18 @@ a:hover,
 
   .grid-col {
     width: 70%;
+  }
+}
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 900px) and (orientation: landscape) {
+  .name {
+    margin-top: 6%;
+    color: #b38a58;
+  }
+
+  .bio,
+  .clients {
+    height: 45%;
   }
 }
 
@@ -203,7 +204,7 @@ a:hover,
   }
 
   .menu {
-    margin-top: 10%;
+    margin-top: 3em;
     text-align: center;
     position: relative;
     left: 50%;
@@ -213,9 +214,8 @@ a:hover,
 
   .menu-item {
     display: block;
-    font-size: 1.3em;
-    font-weight: 10;
-    padding-top: 1.5em;
+    font-size: 1.1em;
+    margin-bottom: 2.5em;
     text-transform: uppercase;
   }
 
@@ -226,7 +226,7 @@ a:hover,
   .contact {
     border-top: 1px solid rgb(161, 159, 159);
     text-align: center;
-    margin-top: 4em;
+    margin-top: 3em;
   }
 
   .insta,
