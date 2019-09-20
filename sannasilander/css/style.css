@@ -111,11 +111,16 @@ a:hover,
   .name {
     margin-top: 6%;
     color: #b38a58;
+    font-size: 1.6em;
+  }
+
+  .bio {
+    font-size: 0.8em;
   }
 
   .bio,
   .clients {
-    height: 45%;
+    height: 40%;
   }
 }
 
