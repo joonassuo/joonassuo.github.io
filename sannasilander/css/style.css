@@ -2,6 +2,10 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
+.grid-col {
+  display: none;
+}
+
 .info-container {
   position: fixed;
   top: 0;
