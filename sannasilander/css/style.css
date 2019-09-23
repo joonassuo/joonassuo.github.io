@@ -7,7 +7,7 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 50vw;
+  width: 45vw;
   margin: 0;
 }
 
@@ -15,13 +15,15 @@ body {
 .clients,
 .name,
 .links {
+  position: relative;
+  left: 15%;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 .name {
-  margin-top: 30%;
-  font-size: 2em;
+  margin-top: 25%;
+  font-size: 2.5em;
   z-index: 1;
   color: rgb(0, 0, 0);
 }
@@ -42,7 +44,7 @@ body {
 
 .links {
   line-height: 1.4em;
-  font-size: 1em;
+  font-size: 1.2em;
   color: rgb(0, 0, 0);
 }
 
@@ -52,7 +54,7 @@ body {
   right: 0;
   top: 0.5%;
   height: 100vh;
-  width: 50vw;
+  width: 55vw;
 }
 
 .grid:after {
