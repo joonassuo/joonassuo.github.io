@@ -1,8 +1,3 @@
-const showColcade = () => {
-    $(".grid-col").show();
-}
-$("body").imagesLoaded(showColcade());
-
 //-----------------------DESKTOP--------------------------------------
 
 var clientsActive;
